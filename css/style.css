@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600);
+@import url(https://fonts.googleapis.com/css?family=Karla:400,700);
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +6,7 @@
 html, body {
     height: 100%;
     width: 100%;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Karla', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -17,7 +17,7 @@ html, body {
     padding: 25px 0;
 }
 h1 {
-    font-weight: 600;
+    font-weight: 700;
     margin-bottom: 5px;
     color: #333;
 }
@@ -51,48 +51,61 @@ h1 {
     display: inline-block;
 }
 .item-block h3 {
-    color: #4775BA;
-    font-weight: 600;
+    color: #E08282;
+    font-weight: 700;
     font-size: .875em;
     letter-spacing: 1px;
 }
 .items {
+    width: 60%;
     display: inline-block;
 }
 .item-inside {
-    padding: 0 0 20px 20px;
+    margin: 0 0 30px 20px;
 }
 .item-inside h4 {
-    font-weight: 600;
+    font-weight: 700;
     color: #333;
     font-size: 1.1em;
     line-height: 1.1em;
     padding-bottom: 5px;
 }
 .item-inside b {
-    font-weight: 600;
+    font-weight: 700;
     color: #555;
 }
 .item-loc {
     padding: 5px 0;
+    color: #555;
 }
 .item-skills {
     color: #777;
-    padding-bottom: 8px;
+    margin-bottom: 8px;
 }
 .item-skills a {
-    color: #4775BA;
+    color: #E08282;
     text-decoration: none;
+}
+.item-skills a:hover {
+    color: #C57676;
 }
 .item-date {
     color: #aaa;
     font-size: .875em;
 }
-@media (max-width: 640px) {
+.item-desc {
+    line-height: 1.6em;
+    padding-top: 10px;
+    color: #777;
+}
+@media (max-width: 40em) {
+    .items {
+        width: 100%;
+    }
     .item-block, .items {
         display: block;
     }
     .item-inside {
-        padding: 10px 0;
+        margin: 10px 0 20px 0;
     }
 }

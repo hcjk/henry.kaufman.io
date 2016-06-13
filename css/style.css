@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Karla:400,700);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600);
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +7,7 @@
 html, body {
     height: 100%;
     width: 100%;
-    font-family: 'Karla', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -18,7 +18,7 @@ html, body {
     padding: 25px 0;
 }
 h1 {
-    font-weight: 700;
+    font-weight: 600;
     margin-bottom: 5px;
     color: #333;
 }
@@ -56,7 +56,7 @@ h1 {
 }
 .item-block h3 {
     color: #E08282;
-    font-weight: 700;
+    font-weight: 600;
     font-size: .875em;
     letter-spacing: 1px;
 }
@@ -68,15 +68,19 @@ h1 {
     margin: 0 0 30px 20px;
 }
 .item-inside h4 {
-    font-weight: 700;
+    font-weight: 600;
     color: #333;
     font-size: 1.1em;
     line-height: 1.1em;
     padding-bottom: 5px;
 }
-.item-inside b {
-    font-weight: 700;
+.item-inside b a {
+    font-weight: 600;
     color: #555;
+    text-decoration: none;
+}
+.item-inside b a:hover {
+    color: #aaa;
 }
 .item-loc {
     padding: 5px 0;
@@ -99,8 +103,15 @@ h1 {
 }
 .item-desc {
     line-height: 1.6em;
-    padding-top:8px;
+    padding-top: 8px;
     color: #777;
+}
+.item-desc a {
+    color: #E08282;
+    text-decoration: none;
+}
+.item-desc a:hover {
+    color: #aaa;
 }
 @media (max-width: 40em) {
     .items {
